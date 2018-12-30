@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  color: #dfdce3;
+  font-family: Roboto;
+}
+body {
+  background-color: #4abdac;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#survey-form {
+  min-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fc4a1a;
+  padding: 20px;
+}
+fieldset {
+  border: none;
+}
+input,
+textarea,
+option,
+select {
+  height: 50px;
+  font-size: 20px;
+  color: black;
+}
+label {
+  font-size: 20px;
+}
+td {
+  max-width: 300px;
+}
+td:first-child {
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+button {
+  width: 100px;
+  color: black;
+  height: 50px;
+  font-size: 20px;
+}
+td > div {
+  display: flex;
+  align-items: center;
+}
