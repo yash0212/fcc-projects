@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+* {
+  color: #edf5e1;
+  font-family: Merriweather;
+}
+h3 {
+  text-align: center;
+  font-weight: 400;
+}
+#main {
+  margin: 10px 20px;
+  padding: 10px;
+  background-color: #5cdb95;
+}
+#title {
+  text-align: center;
+  color: #05386b;
+  font-size: 40px;
+}
+#img-div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 4em;
+  align-items: center;
+}
+#image {
+  box-shadow: 0 0 50px;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  max-height: 438px;
+}
+#img-caption {
+  margin-top: 10px;
+  font-size: 13px;
+}
+#tribute-info {
+  background-color: #379683;
+  text-align: justify;
+  line-height: 200%;
+  padding: 20px;
+}
+blockquote {
+  text-align: center;
+  background-color: #5cdb95;
+}
+h2 {
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  #main {
+    padding: 5px 5px;
+  }
+  #img-div {
+    padding: 5px;
+    margin: 20px;
+  }
+  #image {
+    margin: 0;
+    border-width: 4px;
+  }
+  #tribute-info {
+    padding: 5px;
+  }
+  p {
+    margin: 0;
+  }
+}
