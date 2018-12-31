@@ -34,20 +34,16 @@ body {
   font-size: 20px;
 }
 #vid-container {
-  margin: 80px 20px;
+  margin: 100px 20px 40px;
 }
 #video {
-  width: 1280px;
-  min-height: 640px;
+  width: 1366px;
+  height: 768px;
   box-shadow: 0 0 40px 0 #6e8760;
 }
 @media (max-width: 640px) {
   #header {
     position: absolute;
-  }
-  #video {
-    width: auto;
-    height: auto;
   }
 }
 section {
