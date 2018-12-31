@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles.css" />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>
+<main id="main-doc">
+    <nav id="navbar">
+        <header>VBA documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Constants">Constants</a></li>
+            <li><a class="nav-link" href="#Operators">Operators</a></li>
+            <li><a class="nav-link" href="#Decisions">Decisions</a></li>
+            <li><a class="nav-link" href="#Loops">Loops</a></li>
+            <li><a class="nav-link" href="#Strings">Strings</a></li>
+            <li><a class="nav-link" href="#Date_and_Time">Date and Time</a></li>
+            <li><a class="nav-link" href="#Arrays">Arrays</a></li>
+        </ul>
+    </nav>
+    <div id="docs">
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>
+                Variable is a named memory location used to hold a value that can be changed during the script
+                execution. Following are the basic rules for naming a variable.
+            </p>
+            <ul>
+                <li>
+                    You must use a letter as the first character.
+                </li>
+                <li>
+                    You can't use a space, period (.), exclamation mark (!), or the characters @, &, $, # in the name.
+                </li>
+                <li>
+                    Name can't exceed 255 characters in length.
+                </li>
+                <li>
+                    You cannot use Visual Basic reserved keywords as variable name.
+                </li>
+            </ul>
+            <p>
+                <strong>Syntax</strong>
+                <br> In VBA, you need to declare the variables before using them.
+            </p>
+
+            <code>
+<xmp>
+Dim <<variable_name>> As <<variable_type>>
+      </xmp>
+      </code>
+
+        </section>
+        <section class="main-section" id="Constants">
+            <header>Constants</header>
+            <p> Constant is a named memory location used to hold a value that CANNOT be changed during the script
+                execution. If a user tries to change a Constant value, the script execution ends up with an error.
+                Constants are declared the same way the variables
+                are declared.
+            </p>
+            <p>
+                Following are the rules for naming a constant.
+            </p>
+            <ul>
+                <li>
+                    You must use a letter as the first character.
+                </li>
+                <li>
+                    You can't use a space, period (.), exclamation mark (!), or the characters @, &, $, # in the name.
+                </li>
+                <li>
+                    Name can't exceed 255 characters in length.
+                </li>
+                <li>
+                    You cannot use Visual Basic reserved keywords as variable name.
+                </li>
+            </ul>
+            <p>
+                <strong>Syntax</strong>
+                <br> In VBA, we need to assign a value to the declared Constants. An error is thrown, if we try to
+                change the value of the constant.
+            </p>
+            <code>
+        <xmp>
+Const <<constant_name>> As <<constant_type>> = <<constant_value>>
+    </xmp>
+</code>
+        </section>
+        <section class="main-section" id="Operators">
+            <header>Operators</header>
+            <p>
+                An Operator can be defined using a simple expression - 4 + 5 is equal to 9. Here, 4 and 5 are called
+                operands and + is called operator. VBA supports following types of operators −
+            </p>
+            <ul>
+                <li>Arithmetic Operators</li>
+                <li>Comparison Operators</li>
+                <li>Logical (or Relational) Operators</li>
+                <li>Concatenation Operators</li>
+            </ul>
+            </p>
+        </section>
+        <section class="main-section" id="Decisions">
+            <header>Decisions</header>
+            <p>
+                Decision making allows the programmers to control the execution flow of a script or one of its
+                sections. The execution is governed by one or more conditional statements.
+            </p>
+            <p>
+                Following is the general form of a typical decision making structure found in most of the programming
+                languages.
+            </p>
+            <p>
+                <img src="https://www.tutorialspoint.com/vba/images/decision_making.jpg" alt="decision image">
+            </p>
+        </section>
+        <section class="main-section" id="Loops">
+            <header>Loops</header>
+            <p>
+                There may be a situation when you need to execute a block of code several number of times. In general,
+                statements are executed sequentially: The first statement in a function is executed first, followed by
+                the second, and so on.
+            </p>
+            <p>
+                Programming languages provide various control structures that allow for more complicated execution
+                paths.
+            </p>
+            <p>
+                A loop statement allows us to execute a statement or group of statements multiple times. Following is
+                the general form of a loop statement in VBA.
+            </p>
+            <p>
+                <img src="https://www.tutorialspoint.com/vba/images/loop_architecture.jpg" alt="loop image">
+                <p>
+        </section>
+        <section class="main-section" id="Strings">
+            <header>Strings</header>
+            <p>
+                Strings are a sequence of characters, which can consist of either alphabets, numbers, special
+                characters, or all of them. A variable is said to be a string if it is enclosed within double quotes "
+                ".
+            </p>
+            <p>
+                <strong>Syntax</strong>
+            </p>
+            <code>
+      <xmp>
+variablename = "string"
+      </xmp>
+        </code>
+            <p>
+                <strong>Examples</strong>
+            </p>
+            <code>
+    <xmp>
+str1 = "string"   ' Only Alphabets
+str2 = "132.45"   ' Only Numbers
+str3 = "!@#$;*"  ' Only Special Characters
+Str4 = "Asc23@#"  ' Has all the above
+    </xmp>
+  </code>
+        </section>
+        <section class="main-section" id="Date_and_Time">
+            <header>Date and Time</header>
+            <p>
+                VBScript Date and Time Functions help the developers to convert date and time from one format to
+                another or to express the date or time value in the format that suits a specific condition.
+            </p>
+        </section>
+        <section class="main-section" id="Arrays">
+            <header>Arrays</header>
+            <p>
+                We know very well that a variable is a container to store a value. Sometimes, developers are in a
+                position to hold more than one value in a single variable at a time. When a series of values are stored
+                in a single variable, then it is known as an array
+                variable.
+            </p>
+            <p>
+                <h2>Array Declaration</h2>
+            </p>
+            <p>
+                Arrays are declared the same way a variable has been declared except that the declaration of an array
+                variable uses parenthesis. In the following example, the size of the array is mentioned in the
+                brackets.
+            </p>
+            <code>
+  <xmp>
+'Method 1 : Using Dim
+Dim arr1()	'Without Size
+
+'Method 2 : Mentioning the Size
+Dim arr2(5)  'Declared with size of 5
+
+'Method 3 : using 'Array' Parameter
+Dim arr3
+arr3 = Array("apple","Orange","Grapes")
+  </xmp>
+      </code>
+            <ul>
+                <li>Although, the array size is indicated as 5, it can hold 6 values as array index starts from ZERO.</li>
+
+                <li>Array Index cannot be negative.</li>
+
+                <li>VBScript Arrays can store any type of variable in an array. Hence, an array can store an integer,
+                    string, or characters in a single array variable.</li>
+            </ul>
+            <h2>Assigning Values to an Array</h2>
+            <p>
+                The values are assigned to the array by specifying an array index value against each one of the values
+                to be assigned. It can be a string.
+            </p>
+            <p>
+                <strong>Example</strong>
+                <br>Add a button and add the following function.</p>
+            <code>
+  <xmp>
+Private Sub Constant_demo_Click()
+   Dim arr(5)
+   arr(0) = "1"           'Number as String
+   arr(1) = "VBScript"    'String
+   arr(2) = 100 		   'Number
+   arr(3) = 2.45 		   'Decimal Number
+   arr(4) = #10/07/2013#  'Date
+   arr(5) = #12.45 PM#    'Time
+  
+   msgbox("Value stored in Array index 0 : " & arr(0))
+   msgbox("Value stored in Array index 1 : " & arr(1))
+   msgbox("Value stored in Array index 2 : " & arr(2))
+   msgbox("Value stored in Array index 3 : " & arr(3))
+   msgbox("Value stored in Array index 4 : " & arr(4))
+   msgbox("Value stored in Array index 5 : " & arr(5))
+End Sub
+  </xmp>
+  </code>
+            <p>When you execute the above function, it produces the following output.</p>
+            <code>
+  <xmp>
+Value stored in Array index 0 : 1
+Value stored in Array index 1 : VBScript
+Value stored in Array index 2 : 100
+Value stored in Array index 3 : 2.45
+Value stored in Array index 4 : 7/10/2013
+Value stored in Array index 5 : 12:45:00 PM
+  </xmp>
+      </code>
+
+        </section>
+    </div>
+</main>
+</html>
