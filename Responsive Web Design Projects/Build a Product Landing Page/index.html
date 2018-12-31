@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles.css" />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <img
+        src="https://static.wixstatic.com/media/1170a1_ff7ff522dc5c4b5d827c961c4b9fcb5f~mv2.png/v1/crop/x_546,y_141,w_781,h_817/fill/w_92,h_96,al_c,q_80,usm_0.66_1.00_0.01/transparent-logo-fullhdreso.webp"
+        alt="logo"
+        id="header-img"
+      />
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#vid-container" class="nav-link">Info</a></li>
+          <li><a href="#config" class="nav-link">Config</a></li>
+          <li><a href="#newsletter" class="nav-link">Newsletter</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="vid-container">
+      <iframe
+        id="video"
+        src="https://www.youtube.com/embed/9mlBHxN77r8"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section id="config">
+      <h2><strong>CONFIG COMMANDS WITH EXPLANATIONS</strong></h2>
+      <p>sv_cheats 1 // Turn on cheats</p>
+      <p>sv_infinite_ammo 1 // Infinite nades</p>
+      <p>
+        sv_grenade_trajectory 1 // Grenades will leave throwing lines behind
+        them
+      </p>
+      <p>sv_grenade_trajectory_time 11 // Lines will be shown for 11 seconds</p>
+      <p>sv_grenade_trajectory_thickness 1 // Thicker</p>
+      <p>trajectory lines sv_showimpacts 1 // Show where bullets go</p>
+      <p>sv_showimpacts_time 9 // Bullet traces will dissapear in 9 seconds</p>
+      <p>bot_kick all // Kick all bots</p>
+      <p>bot_stop 1 // Stop bots (when added)</p>
+      <p>ammo_grenade_limit_total 5 // Have 5 grenades total</p>
+      <p>mp_roundtime_defuse 60 // Increase round timer to 60 on defuse maps</p>
+      <p>
+        mp_roundtime_hostage 60 // Increase round timer to 60 in case it is a
+        hostage map
+      </p>
+      <p>mp_limitteams 0 // Don't cap the teams</p>
+      <p>mp_roundtime 999 // Maximum roundtime set to 999 minutes.</p>
+      <p>mp_autoteambalance 0 // Don't autobalance the teams</p>
+      <p>mp_freezetime 0 // No waiting time at the start of round</p>
+      <p>mp_maxmoney 99999 // Expands 16k money limit</p>
+      <p>mp_startmoney 99999 // You will have a lot of money</p>
+      <p>mp_buytime 3600 // Shop is open for 60 minutes</p>
+      <p>mp_buy_anywhere 1 // You can buy anywhere on the map</p>
+      <p>
+        ammo_grenade_limit_total 5 // You can have 5 different nades in your
+        hands
+      </p>
+      <p>mp_restartgame 1 // Restart the game for above commands</p>
+      <p>mp_warmup_end // In case it's still warmup, end it</p>
+    </section>
+    <section id="newsletter">
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="johndoe@example.com"
+        />
+        <input
+          type="submit"
+          name="submit"
+          id="submit"
+          value="Subscribe to Newsletter"
+        />
+      </form>
+    </section>
+  </body>
+</html>
