@@ -1,6 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </head>
   <body>
     <h1 id="title">Survey Form</h1>
@@ -8,18 +9,33 @@
     <form id="survey-form">
       <table>
         <tr>
-          <td><label for="name">Name:</label></td>
-          <td><input type="text" id="name" placeholder="John Doe" /></td>
-        </tr>
-        <tr>
-          <td><label for="email">Email:</label></td>
+          <td><label for="name" id="name-label">Name:</label></td>
           <td>
-            <input type="email" id="email" placeholder="john@example.com" />
+            <input type="text" id="name" placeholder="John Doe" required />
           </td>
         </tr>
         <tr>
-          <td><label for="number">Number:</label></td>
-          <td><input type="number" id="number" placeholder="1234567890" /></td>
+          <td><label for="email" id="email-label">Email:</label></td>
+          <td>
+            <input
+              type="email"
+              id="email"
+              placeholder="john@example.com"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="number" id="number-label">Number:</label></td>
+          <td>
+            <input
+              type="number"
+              id="number"
+              placeholder="1234567890"
+              min="0"
+              max="999999999"
+            />
+          </td>
         </tr>
         <tr>
           <td><label for="dropdown">Gender:</label></td>
@@ -34,15 +50,15 @@
           <td><label for="year">When did you build your PC?</label></td>
           <td>
             <div>
-              <input type="radio" id="year2016" name="year" />
+              <input type="radio" id="year2016" name="year" value="2016" />
               <label for="year2016">2016</label>
             </div>
             <div>
-              <input type="radio" id="year2017" name="year" />
+              <input type="radio" id="year2017" name="year" value="2017" />
               <label for="year2017">2017</label>
             </div>
             <div>
-              <input type="radio" id="year2018" name="year" />
+              <input type="radio" id="year2018" name="year" value="2018" />
               <label for="year2018">2018</label>
             </div>
           </td>
@@ -51,23 +67,23 @@
           <td><label for="os">Which Operating System do you use?</label></td>
           <td>
             <div>
-              <input type="checkbox" id="macOS" name="os" />
+              <input type="checkbox" id="macOS" name="os" value="macOS" />
               <label for="macOS">Mac OS</label>
             </div>
             <div>
-              <input type="checkbox" id="unix" name="os" />
+              <input type="checkbox" id="unix" name="os" value="unix" />
               <label for="unix">Unix</label>
             </div>
             <div>
-              <input type="checkbox" id="ubuntu" name="os" />
+              <input type="checkbox" id="ubuntu" name="os" value="ubuntu" />
               <label for="ubuntu">Ubuntu</label>
             </div>
             <div>
-              <input type="checkbox" id="windows" name="os" />
+              <input type="checkbox" id="windows" name="os" value="windows" />
               <label for="windows">Windows</label>
             </div>
             <div>
-              <input type="checkbox" id="other" name="os" />
+              <input type="checkbox" id="other" name="os" value="other" />
               <label for="other">Other</label>
             </div>
           </td>
@@ -78,7 +94,7 @@
         </tr>
         <tr>
           <td></td>
-          <td><button type="submit">Submit</button></td>
+          <td><button type="submit" id="submit">Submit</button></td>
         </tr>
       </table>
     </form>
